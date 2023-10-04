@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <!--
+            JavaScript 7th Edition
+            Chapter 1
+            Hands-on Project 1-4
+
+            Author: Edward Davis
+            Date: 3/23/2023
+
+            Filename: index.html
+    -->
+
+    <meta charset="UTF-8">
+    <meta name="author" content="Edward Davis">
+    <meta name="description" content="Hands-on Project 1-4">
+    <meta name="date" content="3/20/2023">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" media="screen" href="css/style.css">
+    <!-- <script src="modernizr.custom.05819.js"></script> -->
+    <script src="js/CSP.js"></script>
+
+    <title>JS Functions</title>
+</head>
+
+<body>
+    <div class="wrapper">
+        <div class="functions-page">
+            <div class="wrapper-functions">
+                <!----------------- HEADER ------------------>
+                <header></header>
+
+                <!----------------- NAV ------------------>
+                <nav class="slide-menu" class="hideDesktop"></nav>
+
+                <!----------------- MAIN ------------------>
+                <main>
+                    <div class="functions-wrapper-box">
+                        <div class="functions-card">
+                            <h1 id="card-title">BMI Calculator</h1>
+                            <form>
+                                <div class="f-input-group">
+                                    <input type="text" id="weight" required>
+                                    <label for="">Weight in pounds</label>
+                                </div>
+                                <div class="f-input-group">
+                                    <input type="text" id="height" required>
+                                    <label for="">Height in inches</label>
+                                </div>
+                                <div class="f-input-group" id="bmi-section">
+                                    <input type="text" id="bmi-output" placeholder="Body Mass Index" readonly>
+                                </div>
+                                <button type="button" class="functions-button" id="bmi" value="Calculate BMI">Calculate
+                                    BMI</button>
+                            </form>
+                        </div>
+                    </div>
+                </main>
+                <!----------------- FOOTER ------------------>
+                <footer></footer>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>

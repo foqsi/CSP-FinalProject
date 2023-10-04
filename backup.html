@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <!--
+            JavaScript 7th Edition
+            Chapter 1
+            Hands-on Project 1-4
+
+            Author: Edward Davis
+            Date: 3/23/2023
+
+            Filename: index.html
+    -->
+
+    <meta charset="UTF-8">
+    <meta name="author" content="Edward Davis">
+    <meta name="description" content="Hands-on Project 1-4">
+    <meta name="date" content="3/20/2023">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" media="screen" href="style.css">
+    <!-- <script src="modernizr.custom.05819.js"></script> -->
+    <script src="initialCSP.js"></script>
+
+    <title>ED JS Website</title>
+</head>
+
+<body>
+    <div class="wrapper">
+        <!----------------- HEADER ------------------>
+        <header>
+            <script>displayHeader();</script>
+        </header>
+
+        <!----------------- NAV ------------------>
+        <script>displayButton();</script>
+        <nav class="slide-menu" class="hideDesktop">
+            <script>displayNav();</script>
+        </nav>
+
+        <!----------------- MAIN ------------------>
+        <main>
+            <ul>
+                <div class="box">
+                    <li class="h2">
+                        JavaScript
+                    </li>
+                    <p class="description">JavaScript is a versatile and powerful programming language that is
+                        predominantly
+                        used for web
+                        development. Initially designed to add interactivity and dynamic behavior to static web pages,
+                        JavaScript has evolved significantly over the years to become an essential tool for both
+                        front-end
+                        and back-end development. As a client-side scripting language, JavaScript allows developers to
+                        create highly responsive user interfaces by manipulating HTML and CSS elements, handling user
+                        events
+                        such as clicks and keyboard input, and validating form data, among other tasks.</p>
+                </div>
+                <div class="box">
+                    <li class="h2">
+                        DOM
+                    </li>
+                    <p class="description">The Document Object Model (DOM) is a programming interface for web documents
+                        that
+                        represents the
+                        structure of a document as a tree of objects. Each object, known as a node, corresponds to a
+                        part of
+                        the document, such as an HTML element, an attribute, or text. The DOM provides a standardized
+                        way
+                        for developers to interact with and manipulate the content and structure of web documents using
+                        JavaScript or other scripting languages. By traversing and modifying the DOM tree, developers
+                        can
+                        dynamically change the appearance, content, and behavior of a web page, enabling richer and more
+                        interactive user experiences.</p>
+                </div>
+                <div class="box">
+                    <li class="h2">
+                        AJAX
+                    </li>
+                    <p class="description">Asynchronous JavaScript and XML (AJAX) is a web development technique that
+                        enables web applications
+                        to send and receive data from a server in the background without interfering with the display
+                        and
+                        behavior of the current page. AJAX facilitates asynchronous communication between the browser
+                        and
+                        the server, allowing for dynamic content updates without requiring a complete page reload. While
+                        the
+                        term AJAX includes "XML" in its name, the data exchanged between the client and server can be in
+                        various formats, such as XML, JSON, or plain text. AJAX leverages JavaScript's XMLHttpRequest or
+                        the
+                        Fetch API to make asynchronous HTTP requests, which has become a fundamental technique in modern
+                        web
+                        development, enabling more responsive and user-friendly web applications.</p>
+                </div>
+                <div class="box">
+                    <li class="h2">
+                        jQuery
+                    </li>
+                    <p class="description">jQuery is a popular and widely-used JavaScript library designed to simplify
+                        the
+                        process of working
+                        with HTML documents, handling events, creating animations, and performing AJAX interactions.
+                        Released in 2006, jQuery's primary goal was to provide a unified and easy-to-use API that
+                        addressed
+                        the inconsistencies and cross-browser compatibility issues prevalent at the time. Its intuitive
+                        syntax, along with a powerful set of features and a "write less, do more" philosophy, made it a
+                        go-to choice for developers looking to enhance the interactivity and responsiveness of their web
+                        applications. While the advent of modern web standards and the emergence of new JavaScript
+                        frameworks have somewhat diminished jQuery's dominance, it remains an essential tool in the web
+                        development landscape, particularly for maintaining and updating legacy projects.</p>
+                </div>
+            </ul>
+        </main>
+
+        <!----------------- FOOTER ------------------>
+        <footer>
+            <script>displayFooter();</script>
+        </footer>
+    </div>
+    <script src="CSP.js"></script>
+</body>
+
+</html>

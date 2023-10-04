@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <!--
+            JavaScript 7th Edition
+            Chapter 1
+            Hands-on Project 1-4
+
+            Author: Edward Davis
+            Date: 3/23/2023
+
+            Filename: index.html
+    -->
+
+    <meta charset="UTF-8">
+    <meta name="author" content="Edward Davis">
+    <meta name="description" content="Hands-on Project 1-4">
+    <meta name="date" content="3/20/2023">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" media="screen" href="css/style.css">
+    <script src="js/modernizr.custom.05819.js"></script>
+    <script src="js/touch.js" defer></script>
+    <script src="js/CSP.js"></script>
+
+    <title>ED JS Website</title>
+</head>
+
+<body>
+    <div class="wrapper">
+        <div class="touch-functions">
+            <!----------------- HEADER ------------------>
+            <header></header>
+
+            <!----------------- NAV ------------------>
+            <nav class="slide-menu" class="hideDesktop"></nav>
+
+            <!----------------- MAIN ------------------>
+            <main>
+
+                <div id="hl-target">
+                    <button id="clear-highlight">Clear</button>
+                    <ul>
+                        <div class="box">
+                            <li class="h2">Mouse, Touch, and Pointer Events</li>
+                            <p class="description para1">
+                                Mouse events are a group of events that are specific to user interactions with a
+                                computer mouse. They are an essential part of creating interactive web applications,
+                                enabling developers to handle various actions such as clicks, double-clicks, and mouse
+                                movements. Mouse events include "mousedown", "mouseup", "click", "dblclick",
+                                "mousemove", "mouseover", and "mouseout", among others. These events can be used to
+                                trigger specific functions or change the appearance of elements on a web page, improving
+                                user experience and interactivity.
+                            </p>
+                            <p class="description para2">
+                                Touch events are designed for handling user interactions with touchscreens, which are
+                                common on smartphones and tablets. They provide a way for web developers to create
+                                responsive and intuitive interfaces for touch-based devices. The main touch events
+                                include "touchstart", "touchmove", "touchend", and "touchcancel". These events allow
+                                developers to detect when a user touches the screen, moves their finger across the
+                                screen, lifts their finger from the screen, or if the system cancels a touch event for
+                                some reason. By using touch events, web applications can be adapted to work seamlessly
+                                on devices with touch interfaces, providing a smooth and natural user experience.
+                            </p>
+                            <p class="description para3">
+                                Pointer events are a more recent addition to web standards, aiming to unify mouse,
+                                touch, and pen input into a single set of events. They provide a more consistent way to
+                                handle different input methods and make it easier for developers to create responsive
+                                web applications that work well with various devices and input types. The main pointer
+                                events include "pointerdown", "pointerup", "pointermove", "pointerover", "pointerout",
+                                "pointerenter", "pointerleave", and "pointercancel". By using pointer events, developers
+                                can write a single set of event listeners that work for all types of input devices,
+                                simplifying the code and improving the overall performance and maintainability of web
+                                applications.
+                            </p>
+                        </div>
+                    </ul>
+                </div>
+            </main>
+            <!----------------- FOOTER ------------------>
+            <footer></footer>
+        </div>
+    </div>
+</body>
+
+</html>

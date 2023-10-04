@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <!--
+            JavaScript 7th Edition
+            Chapter 1
+            Hands-on Project 1-4
+
+            Author: Edward Davis
+            Date: 3/23/2023
+
+            Filename: index.html
+    -->
+
+    <meta charset="UTF-8">
+    <meta name="author" content="Edward Davis">
+    <meta name="description" content="Hands-on Project 1-4">
+    <meta name="date" content="3/20/2023">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" media="screen" href="css/style.css">
+    <script src="js/modernizr.custom.05819.js"></script>
+    <script src="js/state.js"></script>
+    <script src="js/CSP.js"></script>
+
+    <title>ED JS Website</title>
+</head>
+
+<body>
+    <div class="wrapper">
+        <div class="state-functions">
+            <!----------------- HEADER ------------------>
+            <header></header>
+
+            <!----------------- NAV ------------------>
+            <nav class="slide-menu" class="hideDesktop"></nav>
+
+            <!----------------- MAIN ------------------>
+            <main>
+                <div id="customizePage-wrapper">
+                    <h4 id="customizePageText">Text size</h4>
+                    <div id="customizePage">
+                        <button id="smallText">Small</button>
+                        <button id="mediumText" class="selected">Medium</button>
+                        <button id="largeText">Large</button>
+                    </div>
+                </div>
+                <ul>
+                    <div class="box">
+                        <li class="h2">Information on Maintaining State</li>
+                        <p class="description modifyText">
+                            Maintaining state in web applications refers to the process of preserving data and user
+                            preferences across multiple pages, sessions, or interactions. As HTTP, the protocol used for
+                            the World Wide Web, is stateless by nature, additional methods are required to preserve the
+                            state. These methods ensure that users have a consistent and personalized experience when
+                            navigating through a website or using a web application.
+                        </p>
+                        <p class="description modifyText">
+                            One common method to maintain state is using cookies. Cookies are small text files stored on
+                            the user's device by the browser, which can hold data such as user preferences, session
+                            identifiers, or authentication tokens. Web applications can read and update these cookies to
+                            remember a user's actions or settings across multiple pages or visits. However, cookies have
+                            some limitations, such as size constraints and privacy concerns, which led to the
+                            development of alternative techniques.
+                        </p>
+                        <p class="description modifyText">
+                            Another approach to maintaining state is utilizing session storage and local storage, which
+                            are part of the Web Storage API. Session storage is used for storing data that is specific
+                            to a single browsing session, and it gets deleted once the session is closed. Local storage,
+                            on the other hand, persists data even after the session is closed, allowing for longer-term
+                            storage. Both session storage and local storage can store larger amounts of data compared to
+                            cookies and provide better security and privacy.
+                        </p>
+                        <p class="description modifyText">
+                            In addition to the client-side methods, server-side techniques can also be employed to
+                            maintain state. One such method is using server-side sessions, where the user's data is
+                            stored on the server and linked to the user via a unique session identifier. This identifier
+                            is then passed between the server and the client, usually through cookies or URL parameters.
+                            Server-side sessions can provide a higher level of security and enable the storage of
+                            sensitive data, but they may require more resources and increase server load.
+                        </p>
+                    </div>
+                </ul>
+            </main>
+            <!----------------- FOOTER ------------------>
+            <footer></footer>
+        </div>
+    </div>
+</body>
+
+</html>

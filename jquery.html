@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <!--
+            JavaScript 7th Edition
+            Chapter 1
+            Hands-on Project 1-4
+
+            Author: Edward Davis
+            Date: 3/23/2023
+
+            Filename: index.html
+    -->
+
+    <meta charset="UTF-8">
+    <meta name="author" content="Edward Davis">
+    <meta name="description" content="Hands-on Project 1-4">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="date" content="3/20/2023">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" media="screen" href="css/style.css">
+    <script src="js/modernizr.custom.05819.js"></script>
+    <script src="js/CSP.js"></script>
+
+
+
+    <!-- Sortable List View -->
+    <script src="https://code.jquery.com/jquery-3.1.0.js"></script>
+    <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+    <link rel="stylesheet" href="css/all.min.css" />
+    <link href="css/treeSortable.css" rel="stylesheet" />
+
+
+
+
+    <title>ED JS Website</title>
+</head>
+
+<body>
+    <div class="page-wrapper">
+        <div class="jquery-page">
+            <!----------------- HEADER ------------------>
+            <header></header>
+
+            <!----------------- NAV ------------------>
+            <nav class="slide-menu" class="hideDesktop"></nav>
+
+            <!----------------- MAIN ------------------>
+            <main>
+                <div class="container">
+                    <h1>Sortable Tree</h1>
+                    <p>Hover over to see options.<br> Click the text to modify title.<br>
+                        Use the Save and Reset buttons to save your changes or revert to default.<br>
+                        Mobile functionality.</p>
+                    <div class="wrapper">
+                        <ul id="left-tree">
+                            <div class="branch-drag-handler"></div>
+                        </ul>
+                        <ul id="right-tree"></ul>
+                    </div>
+                    <input class="jqueryButton" id="save" type="button" value="Save Content" tabindex="1"
+                        accesskey="S"></input>
+                    <input class="jqueryButton" id="reset" type="button" value="Reset Content" tabindex="2"
+                        accesskey="R"></input>
+                </div>
+
+            </main>
+            <!----------------- FOOTER ------------------>
+            <footer></footer>
+
+            <script src="https://code.jquery.com/jquery-3.1.0.js"></script>
+            <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+            <script src="https://unpkg.com/@popperjs/core@2/dist/umd/popper.min.js"></script>
+            <script src="https://unpkg.com/tippy.js@6/dist/tippy-bundle.umd.js"></script>
+            <script
+                src="https://cdnjs.cloudflare.com/ajax/libs/jqueryui-touch-punch/0.2.3/jquery.ui.touch-punch.min.js"></script>
+            <script src="js/treeSortable.js"></script>
+            <script src="js/jqueryplugin.js"></script>
+        </div>
+    </div>
+</body>
+
+</html>

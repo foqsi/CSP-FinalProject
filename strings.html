@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <!--
+            JavaScript 7th Edition
+            Chapter 1
+            Hands-on Project 1-4
+
+            Author: Edward Davis
+            Date: 3/23/2023
+
+            Filename: index.html
+    -->
+
+    <meta charset="UTF-8">
+    <meta name="author" content="Edward Davis">
+    <meta name="description" content="Hands-on Project 1-4">
+    <meta name="date" content="3/20/2023">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" media="screen" href="css/style.css">
+    <script src="js/modernizr.custom.05819.js"></script>
+    <script src="js/strings.js" defer></script>
+    <script src="js/CSP.js"></script>
+
+    <title>ED JS Website</title>
+</head>
+
+<body>
+    <div class="wrapper">
+        <div class="wrapper-functions">
+            <!----------------- HEADER ------------------>
+            <header></header>
+
+            <!----------------- NAV ------------------>
+            <nav class="slide-menu" class="hideDesktop"></nav>
+
+            <!----------------- MAIN ------------------>
+            <main>
+                <div class="functions-wrapper-box">
+                    <div class="functions-card">
+                        <div class="card-title">
+                            <h1 id="card-title">Guessing Game</h1>
+                            <p id="displayWord"></p>
+                            <form id="guessForm">
+                                <div class="f-input-group">
+                                    <input type="text" id="guess" name="guess" placeholder="Guess a letter">
+                                </div>
+                                <button type="submit" class="functions-button" id="guessButton">Guess</button>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </main>
+            <!----------------- FOOTER ------------------>
+            <footer></footer>
+        </div>
+    </div>
+</body>
+
+</html>

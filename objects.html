@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <!--
+            JavaScript 7th Edition
+            Chapter 1
+            Hands-on Project 1-4
+
+            Author: Edward Davis
+            Date: 3/23/2023
+
+            Filename: index.html
+    -->
+
+    <meta charset="UTF-8">
+    <meta name="author" content="Edward Davis">
+    <meta name="description" content="Hands-on Project 1-4">
+    <meta name="date" content="3/20/2023">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" media="screen" href="css/style.css">
+    <link rel="stylesheet" media="screen" href="css/objects.css">
+    <script src="js/modernizr.custom.05819.js"></script>
+    <script src="js/CSP.js"></script>
+
+    <title>ED JS Website</title>
+</head>
+
+<body>
+    <div class="wrapper">
+        <!----------------- HEADER ------------------>
+        <header></header>
+
+        <!----------------- NAV ------------------>
+        <nav class="slide-menu" class="hideDesktop"></nav>
+
+        <!----------------- MAIN ------------------>
+        <main>
+            <div class="imgGallery">
+                <h1>Photo Gallery: Ordering Form </h1>
+                <p><img src="images/bigcat.jpg" width="250" height="175" alt="Big Cat Poster" /><br />
+                    Photo of a big cat</p>
+                <p><img src="images/stretchycat.jpg" width="250" height="175" alt="House Cat Poster" /><br />
+                    Photo of a house cat</p>
+            </div>
+
+            <form id="formPhoto" name="formPhoto">
+                <fieldset>
+                    <legend>Customer Information</legend>
+                    <label for="buyer" class="required">Name:</label>
+                    <input type="text" id="buyer" name="buyer" />
+                    <label class="error" id="errorName">*Required Field&nbsp;&nbsp;</label><br />
+
+                    <label for="email" class="required">Email:</label><input type="text" id="email" name="email" />
+                    <label class="error" id="errorEmail">*Required Field&nbsp;&nbsp;</label>
+                    <br class="clearboth" />
+                </fieldset> <br>
+
+
+                <fieldset>
+                    <legend>Select Image</legend>
+                    <label class="titleLabel" for="imgOne">Big Cat</label>
+                    <input type="radio" id="imgOne" name="fileName" value="images/bigcat.jpg" />
+                    <br>
+                    <label class="titleLabel" for="imgTwo">House Cat</label>
+                    <input type="radio" id="imgTwo" name="fileName" value="images/stretchycat.jpg" />
+
+                    <label id="errorFilename" class="error">&nbsp;&nbsp;&nbsp;&nbsp;*Select an image</label>
+                </fieldset><br>
+
+
+                <fieldset>
+                    <legend>Order Information</legend>
+                    <div class="lefttwo">
+                        <label for="pictureOne">4-wallets ($10)</label>
+                        <input type="radio" id="pictureOne" name="size" value="4-wallets" />
+
+                        <label for="pictureTwo">2-4x6 ($10)</label>
+                        <input type="radio" id="pictureTwo" name="size" value="2-4x6" />
+
+                        <label for="pictureThree">5x7 ($10)</label>
+                        <input type="radio" id="pictureThree" name="size" value="5x7" />
+                    </div>
+                    <div class="lefttwo">
+                        <label for="pictureFour">8x10 ($20)</label>
+                        <input type="radio" id="pictureFour" name="size" value="8x10" />
+
+                        <label for="pictureFive">11x14 ($30)</label>
+                        <input type="radio" id="pictureFive" name="size" value="11x14" />
+                    </div>
+                    <div class="lefttwo">
+                        <label id="errorSize" class="error">*Select a
+                            size&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</label>
+                    </div>
+                    <br /><br class="clearboth" />
+
+                    <label for="copies" class="required">Quantity</label>
+                    <input type="text" id="copies" name="copies" />
+                    <label id="errorPortrait" class="error">*Must be 1-25&nbsp;&nbsp;&nbsp;</label>
+                    <br class="clearboth" />
+
+                    <p><input id="submitButton" class="margin175" type="button" value="Prepare Order" /></p>
+                </fieldset>
+            </form>
+        </main>
+        <!----------------- FOOTER ------------------>
+        <footer></footer>
+        <script src="js/objects.js"></script>
+    </div>
+</body>
+
+</html>
