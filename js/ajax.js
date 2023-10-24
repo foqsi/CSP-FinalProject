@@ -24,7 +24,7 @@ async function sendCocktail() {
     });
 
     xhr.open('GET', 'https://cocktails3.p.rapidapi.com/random');
-    xhr.setRequestHeader('X-RapidAPI-Key', 'b6285d5f53msha5af2c96fe83611p105edajsnb84eef3660d8');
+    xhr.setRequestHeader('X-RapidAPI-Key', '');
     xhr.setRequestHeader('X-RapidAPI-Host', 'cocktails3.p.rapidapi.com');
 
     xhr.send(data);
